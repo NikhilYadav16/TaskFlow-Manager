@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/0fcc8b9f34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="dateTime" class="date-time"></div>
+
+  <div class="instruction-popup" id="instructionDialog">
+    <strong>Heads-up!</strong>
+    <p>Use Enter to add task<br/>Click checkbox to mark done<br/>Right click to remove</p>
+    <button id="closeDialog">Got it</button>
+  </div>
+
+  <div class="container">
+    <header>
+      <h1>TaskFlow Manager</h1>
+      <h3>Your personal productivity partner</h3>
+    </header>
+
+    <form id="form">
+      <input type="text" id="input" class="input" placeholder="What needs to be done?" autocomplete="off" />
+      <ul id="todos" class="todos"></ul>
+    </form>
+  </div>
+
+  <footer>
+    <p>Made with <span>❤️</span> by <strong>NIKHIL YADAV</strong></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

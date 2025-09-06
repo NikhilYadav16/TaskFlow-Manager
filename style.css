@@ -1,0 +1,143 @@
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(ellipse at center, #092f40 0%, #0f1218 100%);
+  color: #f5f2f2;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Date & Time */
+.date-time {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ffff;
+  opacity: 0.8;
+}
+
+/* Popup Instruction */
+.instruction-popup {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: rgba(30, 30, 30, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 200px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.1);
+  z-index: 100;
+}
+
+.instruction-popup button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #00ffff;
+  color: #0d1117;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.instruction-popup button:hover {
+  background: #174255;
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 100px auto;
+  background: rgba(20, 20, 30, 0.7);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 20px rgba(0,255,255,0.05);
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #8cd6de;
+  text-shadow: 0 0 10px #00ffff33;
+}
+
+header h3 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-weight: normal;
+  color: #999;
+}
+
+/* Input */
+.input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  background: #1e222f;
+  border: none;
+  border-radius: 10px;
+  color: #9f5656;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+/* Todos */
+.todos {
+  list-style: none;
+}
+
+.todos li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2b2f3e;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background 0.2s ease-in-out;
+}
+
+.todos li:hover {
+  background: #353b4d;
+}
+
+.todos li.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.todos input[type="checkbox"] {
+  margin-right: 12px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #888;
+  font-family: 'Cursive', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+footer span {
+  color: red;
+}
